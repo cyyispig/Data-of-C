@@ -5,8 +5,8 @@ int main(){
 	int N = 10;
 	int k;
 	int array[10] = {1,5,2,76,23,74,67,36,98,64};
-	printf("一共有%d个数字\n",N);
-	printf("请输入需要第几大的值K=");
+	printf("涓�鍏辨湁%d涓暟瀛梊n",N);
+	printf("璇疯緭鍏ラ渶瑕佺鍑犲ぇ鐨勫�糑=");
 	scanf("%d",&k);
 	sort(array,N);
 	int i;
@@ -32,4 +32,4 @@ void sort(int array[],int length){
             }
         }
     }	
-}
+} 
