@@ -2,7 +2,7 @@
  
 void PrintDigit(double , int);
  
-int main(int argc, char **argv)
+int main()
 {
  
     PrintDigit(-9.195348,7);
@@ -25,7 +25,7 @@ void PrintDigit(double num, int len)
     num = num - n;
     while(num > 0 && i < len){
         if (i == 0){
-            // ÓÉÓÚdoubleÐ¡Êý´æ´¢·½Ê½²¢·ÇÈ·¶¨Öµ£¬¶øÊÇÒ»¸ö½üËÆÖµËùÒÔ²ÉÓÃÕâÖÖ·½Ê½
+            // ç”±äºŽdoubleå°æ•°å­˜å‚¨æ–¹å¼å¹¶éžç¡®å®šå€¼ï¼Œè€Œæ˜¯ä¸€ä¸ªè¿‘ä¼¼å€¼æ‰€ä»¥é‡‡ç”¨è¿™ç§æ–¹å¼
             double add = 0.5;
             int j;
             for (j=0; j<len; j++) {
