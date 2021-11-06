@@ -13,7 +13,7 @@ char *dict[4] = {"this","two","fat","that"};
  
 int wordExist(int x, int y, int dir, int strlen, char *word);
  
-int main(void)
+int main()
 {
     char word[5];
     int x, y, dir, strlen;
@@ -22,11 +22,11 @@ int main(void)
         for(y = 0;y < 4;y++){
             for(dir = 0;dir < 8;dir++){
                 for(strlen = 2;strlen < 5;strlen++){
-                    // ×ø±ê x y
-                    // ·½Ïò dir
-                    // µ¥´Ê³¤¶È´Ó2¿ªÊ¼
+                    // åæ ‡ x y
+                    // æ–¹å‘ dir
+                    // å•è¯é•¿åº¦ä»Ž2å¼€å§‹
                     if(wordExist(x, y, dir, strlen, word) == 1){
-                        printf("´æÔÚ: %s\n",word);
+                        printf("å­˜åœ¨: %s\n",word);
                         break;
                     }
                 }
@@ -51,39 +51,39 @@ int wordExist(int x, int y, int dir, int strlen, char *word)
             }
         }
         switch (dir){
-            case 0:        //´Ó×óµ½ÓÒ
+            case 0:        //ä»Žå·¦åˆ°å³
                 y++;
                 break;
-            case 1:        //´ÓÓÒµ½×ó
+            case 1:        //ä»Žå³åˆ°å·¦
                 y--;
                 break;
-            case 2:        //´ÓÉÏµ½ÏÂ
+            case 2:        //ä»Žä¸Šåˆ°ä¸‹
                 x++;
                 break;
-            case 3:        //´ÓÏÂµ½ÉÏ
+            case 3:        //ä»Žä¸‹åˆ°ä¸Š
                 x--;
                 break;
-            case 4:        //´Ó×óÉÏµ½ÓÒÏÂ
+            case 4:        //ä»Žå·¦ä¸Šåˆ°å³ä¸‹
                 x++;
                 y++;
                 break;
-            case 5:        //´ÓÓÒÏÂµ½×óÉÏ
+            case 5:        //ä»Žå³ä¸‹åˆ°å·¦ä¸Š
                 x--;
                 y--;
                 break;
-            case 6:        //´Ó×óÏÂµ½ÓÒÉÏ
+            case 6:        //ä»Žå·¦ä¸‹åˆ°å³ä¸Š
                 x--;
                 y++;
                 break;
-            case 7:        //´ÓÓÒÉÏµ½×óÏÂ
+            case 7:        //ä»Žå³ä¸Šåˆ°å·¦ä¸‹
                 x++;
                 y--;
                 break;
             default:
-                puts("·½Ïò²»´æÔÚ");
+                puts("æ–¹å‘ä¸å­˜åœ¨");
                 return 0;
          }
-         if(x < 0 || y < 0) //Êý×éÒç³ö 
+         if(x < 0 || y < 0) //æ•°ç»„æº¢å‡º 
             return 0;
     }
     return 0;
